@@ -1,0 +1,10 @@
+<form #formAdd="ngForm" class="task-form" novalidate (ngSubmit)="onSubmit()">
+    <input 
+    autocomplete="off" 
+    class="task-form__input" 
+    name="title" 
+    placeholder="Enter your task?" 
+    required type="text" 
+    [(ngModel)] = "title"
+    />
+  </form>
